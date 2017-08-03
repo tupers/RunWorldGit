@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<random type="weapon">
+    <slot>
+        <percent num="3">90</percent>
+        <percent num="2">70</percent>
+        <percent num="1">20</percent>
+    </slot>
+    <addition>
+        <percent num="3">95</percent>
+        <percent num="2">50</percent>
+        <percent num="1">0</percent>
+    </addition>
+    <property>
+        <major growth="5" range="0.1">ATK</major>
+        <minor range="0.05">SPD</minor>
+        <minor range="0.05">HIT</minor>
+        <minor range="0.05">AVD</minor>
+        <minor range="0.05">RANGE</minor>
+    </property>
+</random>

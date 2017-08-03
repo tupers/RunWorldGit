@@ -1,0 +1,1406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="include\tools\glm\detail\func_common.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_common_simd.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_exponential.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_exponential_simd.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_geometric.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_geometric_simd.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_integer.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_integer_simd.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_matrix.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_matrix_simd.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_packing.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_packing_simd.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_trigonometric.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_trigonometric_simd.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_vector_relational.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\func_vector_relational_simd.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_gentype.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_half.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_mat.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_mat2x2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_mat2x3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_mat2x4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_mat3x2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_mat3x3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_mat3x4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_mat4x2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_mat4x3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_mat4x4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_mat4x4_simd.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_vec.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_vec1.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_vec2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_vec3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_vec4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\detail\type_vec4_simd.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\bitfield.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\color_space.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\constants.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\epsilon.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\functions.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\integer.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\matrix_access.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\matrix_inverse.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\matrix_transform.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\noise.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\packing.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\quaternion.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\quaternion_simd.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\random.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\reciprocal.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\round.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\type_precision.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\type_ptr.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\ulp.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtc\vec1.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\associated_min_max.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\bit.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\closest_point.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\color_encoding.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\color_space.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\color_space_YCoCg.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\common.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\compatibility.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\component_wise.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\dual_quaternion.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\euler_angles.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\extend.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\extended_min_max.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\exterior_product.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\fast_exponential.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\fast_square_root.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\fast_trigonometry.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\float_notmalize.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\gradient_paint.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\handed_coordinate_space.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\hash.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\integer.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\intersect.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\io.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\log_base.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\matrix_cross_product.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\matrix_decompose.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\matrix_interpolation.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\matrix_major_storage.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\matrix_operation.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\matrix_query.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\matrix_transform_2d.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\mixed_product.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\norm.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\normal.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\normalize_dot.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\number_precision.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\optimum_pow.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\orthonormalize.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\perpendicular.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\polar_coordinates.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\projection.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\quaternion.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\raw_data.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\rotate_normalized_axis.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\rotate_vector.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\scalar_relational.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\spline.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\std_based_type.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\string_cast.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\transform.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\transform2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\type_aligned.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\type_trait.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\vector_angle.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\vector_query.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\tools\glm\gtx\wrap.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\assimp\color4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\assimp\material.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\assimp\matrix3x3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\assimp\matrix4x4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\assimp\quaternion.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\assimp\vector2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\assimp\vector3.inl">
+      <Filter>头文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\object\RPG_Equipment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\object\RPG_Item.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\object\RPG_Object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\object\RPG_RuneStone.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\object\RPG_Weapon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\type\RPG_Type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\pugixml.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\pugiconfig.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\GLFW\glfw3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\GLFW\glfw3native.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\pugiXML\pugiconfig.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\pugiXML\pugixml.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glad\glad.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\openGL\Shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\_features.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\_fixes.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\_noise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\_swizzle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\_swizzle_func.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\_vectorize.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\func_common.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\func_exponential.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\func_geometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\func_integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\func_matrix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\func_packing.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\func_trigonometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\func_vector_relational.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\precision.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\setup.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_float.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_gentype.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_half.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_int.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_mat.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_mat2x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_mat2x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_mat2x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_mat3x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_mat3x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_mat3x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_mat4x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_mat4x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_mat4x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_vec.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_vec1.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_vec2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_vec3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\detail\type_vec4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\bitfield.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\color_space.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\constants.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\epsilon.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\functions.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\matrix_access.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\matrix_integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\matrix_inverse.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\matrix_transform.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\noise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\packing.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\quaternion.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\random.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\reciprocal.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\round.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\type_aligned.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\type_precision.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\type_ptr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\ulp.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtc\vec1.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\associated_min_max.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\bit.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\closest_point.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\color_encoding.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\color_space.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\color_space_YCoCg.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\common.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\compatibility.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\component_wise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\dual_quaternion.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\euler_angles.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\extend.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\extended_min_max.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\exterior_product.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\fast_exponential.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\fast_square_root.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\fast_trigonometry.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\gradient_paint.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\handed_coordinate_space.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\hash.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\intersect.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\io.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\log_base.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\matrix_cross_product.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\matrix_decompose.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\matrix_interpolation.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\matrix_major_storage.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\matrix_operation.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\matrix_query.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\matrix_transform_2d.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\mixed_product.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\norm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\normal.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\normalize_dot.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\number_precision.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\optimum_pow.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\orthonormalize.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\perpendicular.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\polar_coordinates.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\projection.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\quaternion.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\range.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\raw_data.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\rotate_normalized_axis.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\rotate_vector.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\scalar_multiplication.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\scalar_relational.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\spline.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\std_based_type.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\string_cast.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\transform.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\transform2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\type_aligned.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\type_trait.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\vec_swizzle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\vector_angle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\vector_query.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\gtx\wrap.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\simd\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\simd\exponential.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\simd\geometric.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\simd\integer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\simd\matrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\simd\packing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\simd\platform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\simd\trigonometric.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\simd\vector_relational.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\common.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\exponential.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\ext.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\geometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\glm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\mat2x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\mat2x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\mat2x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\mat3x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\mat3x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\mat3x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\mat4x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\mat4x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\mat4x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\matrix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\packing.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\trigonometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\vec2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\vec3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\vec4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\glm\vector_relational.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\RuneEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\generator\Map_Generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\generator\RPG_Generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\generator\RPG_WeaponGenerator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\object\Map_Object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\Compiler\poppack1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\Compiler\pstdint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\Compiler\pushpack1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\port\AndroidJNI\AndroidJNIIOSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\ai_assert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\anim.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\cexport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\cfileio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\cimport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\color4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\DefaultLogger.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\defs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\Exporter.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\Importer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\importerdesc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\IOStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\IOSystem.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\light.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\Logger.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\LogStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\material.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\matrix3x3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\matrix4x4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\metadata.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\NullLogger.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\postprocess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\ProgressHandler.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\quaternion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\scene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\vector2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\vector3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assimp\version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\openGL\Model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\openGL\Mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\openGL\Camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\ft2build.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\config\ftconfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\config\ftheader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\config\ftmodule.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\config\ftoption.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\config\ftstdlib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svbdf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svcid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svfntfmt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svgldict.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svgxval.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svkern.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svmetric.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svmm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svotval.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svpfr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svpostnm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svprop.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svpscmap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svpsinfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svsfnt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svttcmap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svtteng.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svttglyf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\services\svwinfnt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\autohint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\ftcalc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\ftdebug.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\ftdriver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\ftgloadr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\fthash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\ftmemory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\ftobjs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\ftpic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\ftrfork.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\ftserv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\ftstream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\fttrace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\ftvalid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\psaux.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\pshints.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\sfnt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\t1types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\internal\tttypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\freetype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftadvanc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftautoh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftbbox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftbdf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftbitmap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftbzip2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftcache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftcffdrv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftchapters.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftcid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\fterrdef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\fterrors.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftfntfmt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftgasp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftglyph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftgxval.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftgzip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftimage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftincrem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftlcdfil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftlist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftlzw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftmac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftmm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftmodapi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftmoderr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftotval.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftoutln.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftpcfdrv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftpfr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftrender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftsizes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftsnames.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftstroke.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftsynth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftsystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\fttrigon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftttdrv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\fttypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ftwinfnt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\t1tables.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ttnameid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\tttables.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\tttags.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\freetype\ttunpat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools\openGL\Text.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ESoundEngineOptions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ESoundOutputDrivers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_EStreamModes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IAudioRecorder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IAudioStream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IAudioStreamLoader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IFileFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IFileReader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IRefCounted.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_irrKlangTypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISound.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundDeviceList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundEffectControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundMixedOutputReceiver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundSource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_ISoundStopEventReceiver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_IVirtualRefCounted.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_SAudioStreamFormat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\ik_vec3d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\irrklang\irrKlang.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\EngineFps.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\generator\Particle_Generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\RPG_Equipment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\RPG_Item.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\RPG_Object.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\RPG_RuneStone.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\RPG_Weapon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\glad\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\stb_image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\tools\glm\detail\glm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\RuneEngine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\generator\Map_Generator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\generator\RPG_Generator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\generator\RPG_WeaponGenerator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\Map_Object.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\openGL\Text.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\EngineFps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\generator\Particle_Generator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\glfw3.lib" />
+    <Library Include="lib\pugixml.lib" />
+    <Library Include="lib\assimp-vc140-mt.lib" />
+    <Library Include="lib\freetyped.lib" />
+    <Library Include="lib\irrKlang.lib" />
+  </ItemGroup>
+</Project>

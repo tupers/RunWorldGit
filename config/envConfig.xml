@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env>
+    <size>
+        <width>1000</width>
+        <height>1000</height>
+    </size>
+    <texture name="earth" id="0" type="ground">./texture/earth.jpg</texture>
+    <texture name="water" id="1" type="ground">./texture/water.jpg</texture>
+    <texture name="tree" id="21" type="plant">./texture/tree.png</texture>
+</env>

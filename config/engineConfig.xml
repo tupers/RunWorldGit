@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<engine>
+    <window>
+        <width>800</width>
+        <height>600</height>
+        <name>RuneWorld</name>
+    </window>
+    <shader tar="map">
+        <vs>./shader/map.vs</vs>
+        <fs>./shader/map.fs</fs>
+    </shader>
+    <shader tar="default">
+        <vs>./shader/firstShader.vs</vs>
+        <fs>./shader/firstShader.fs</fs>
+    </shader>
+    <shader tar="character">
+        <vs>./shader/character.vs</vs>
+        <fs>./shader/character.fs</fs>
+    </shader>
+    <shader tar="particle">
+        <vs>./shader/particle.vs</vs>
+        <fs>./shader/particle.fs</fs>
+    </shader>
+</engine>
