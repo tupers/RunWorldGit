@@ -233,7 +233,7 @@ void RuneEngine::exec()
 		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		//mapLoop();
+		mapLoop();
 		particleLoop();
 		textLoop();
 
@@ -277,8 +277,11 @@ ENGINE_STATUS RuneEngine::loadParticle()
 
 	m_hParticleGen = new Particle_Generator(shader->second.shader);
 	try {
-		m_hParticleGen->createParticles("firetest", 1000, "particle_fire",5.0,1.0,glm::vec2(400,300));
-	}
+		m_hParticleGen->createParticles("firetest", 100, "particle_fire",5.0,1.0,glm::vec2(400,300));
+		m_hParticleGen->createParticles("firetest", 100, "particle_fire", 5.0, 1.0, glm::vec2(400, 300));
+		m_hParticleGen->createParticles("firetest", 100, "particle_fire", 5.0, 1.0, glm::vec2(400, 300));
+		m_hParticleGen->createParticles("firetest", 100, "particle_fire", 5.0, 1.0, glm::vec2(400, 300));
+		}	    
 	catch(RPG_STATUS &ret){
 		std::cout << "create failed: " << ret << std::endl;
 		throw;

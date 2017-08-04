@@ -92,7 +92,7 @@ void Particle_Generator::createParticles(std::string name, unsigned int initNum,
 	if (tex == m_mapTexture.end())
 		throw ConfigErr;
 	obj.ptex = &m_mapTexture[texName];
-	obj.updateNum = 8;
+	obj.updateNum = 2;
 	obj.lastUsedParticle = 0;
 	obj.dt = 0.0075;
 	obj.scale = size;
@@ -134,8 +134,8 @@ void Particle_Generator::update()
 			Par.Life -= dt;
 			if (Par.Life > 0.0)
 			{
-				Par.angle--;
-				Par.Position = glm::vec2(Par.Ellipse.x*cos(glm::radians(Par.angle)), Par.Ellipse.y*sin(glm::radians(Par.angle)));
+				Par.Ellipse.z--;
+				//Par.Position = glm::vec2(Par.Ellipse.x*cos(glm::radians(Par.angle)), Par.Ellipse.y*sin(glm::radians(Par.angle)));
 			}
 		}
 		pObj++;
@@ -162,9 +162,10 @@ void Particle_Generator::draw()
 		{
 			if (pPar.Life > 0.0f)
 			{
-				auto dif = pPar.Position + pPar.offset;
-				m_hShader->setVec2("offset", pPar.Position+pPar.offset);
-				//m_hShader->setVec2("")
+				//auto dif = pPar.Position + pPar.offset;
+				//m_hShader->setVec2("offset", pPar.Position+pPar.offset);
+				m_hShader->setVec3("ellipse", pPar.Ellipse);
+				m_hShader->setVec2("offset", pPar.offset);
 				glDrawArrays(GL_TRIANGLES, 0, 6);
 			}
 		}
@@ -261,9 +262,7 @@ void Particle_Generator::RespawnParticle(Particle & par)
 	float randoma = (float)getRandom(-50,50) / 10.0;
 	float randomb = (float)getRandom(0, 300) / 10.0;
 
-	par.Ellipse = glm::vec2(randoma, randomb);
-	par.angle = 180.0f;
-	par.Position = glm::vec2(-randoma, 0);
-	par.offset = -par.Position;
+	par.Ellipse = glm::vec3(randoma, randomb,180.0f);
+	par.offset = -glm::vec2(-randoma, 0);
 	par.Life = 1.0f;
 }

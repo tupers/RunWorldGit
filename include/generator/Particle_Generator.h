@@ -15,11 +15,10 @@ class Particle_Generator :public RPG_Generator
 public:
 	typedef struct
 	{
-		glm::vec2 Position;
+		//glm::vec2 Position;
 		//glm::vec2 Velocity;
-		glm::vec2 Ellipse;
+		glm::vec3 Ellipse;
 		glm::vec2 offset;
-		float angle;
 		float Life;
 	}Particle;
 	Particle_Generator(Shader* sha);
