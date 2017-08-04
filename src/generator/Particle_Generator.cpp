@@ -81,7 +81,7 @@ RPG_STATUS Particle_Generator::loadTexture()
 	return Success;
 }
 
-void Particle_Generator::createParticles(std::string name, unsigned int initNum, std::string texName)
+void Particle_Generator::createParticles(std::string name, unsigned int initNum, std::string texName, float size , float pointSize ,glm::vec2 startPos)
 {
 	ParticleObj obj;
 	Particle par;
@@ -94,6 +94,12 @@ void Particle_Generator::createParticles(std::string name, unsigned int initNum,
 	obj.ptex = &m_mapTexture[texName];
 	obj.updateNum = 8;
 	obj.lastUsedParticle = 0;
+	obj.dt = 0.0075;
+	obj.scale = size;
+	obj.pointScale = pointSize;
+	glm::mat4 trans;
+	trans = glm::translate(trans, glm::vec3(startPos, 0.0));
+	obj.model = glm::scale(trans, glm::vec3(obj.scale, obj.scale, obj.scale));
 	m_mapParticleList.insert({name,obj});
 
 }
@@ -121,7 +127,7 @@ void Particle_Generator::update()
 		}
 
 		//update all particles
-		float dt = 0.01;
+		float dt = obj.dt;
 		for (int i = 0; i < obj.particles.size(); i++)
 		{
 			Particle& Par = obj.particles[i];
@@ -149,7 +155,9 @@ void Particle_Generator::draw()
 	{
 		
 		glBindTexture(GL_TEXTURE_2D, obj.second.ptex->id);
-		
+		m_hShader->setMat4("model", obj.second.model);
+		m_hShader->setFloat("pointScale", obj.second.pointScale);
+
 		for each (auto pPar in obj.second.particles)
 		{
 			if (pPar.Life > 0.0f)
@@ -164,6 +172,35 @@ void Particle_Generator::draw()
 	glEnable(GL_DEPTH_TEST);
 	// Don't forget to reset to default blending mode
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+}
+
+void Particle_Generator::setParticlesPos(std::string parName, glm::vec2 pos)
+{
+	auto par = m_mapParticleList.find(parName);
+	if (par == m_mapParticleList.end())
+		throw ConfigErr;
+	par->second.startPos = pos;
+	glm::mat4 trans;
+	trans = glm::translate(trans, glm::vec3(par->second.startPos, 0.0));
+	par->second.model = glm::scale(trans, glm::vec3(par->second.scale, par->second.scale, par->second.scale));
+}
+
+void Particle_Generator::setParticlesSize(std::string parName, float size)
+{
+	auto par = m_mapParticleList.find(parName);
+	if (par == m_mapParticleList.end())
+		throw ConfigErr;
+	glm::mat4 trans;
+	trans = glm::translate(trans, glm::vec3(par->second.startPos, 0.0));
+	par->second.model = glm::scale(trans, glm::vec3(par->second.scale, par->second.scale, par->second.scale));
+}
+
+void Particle_Generator::setParticlesPointSize(std::string parName, float size)
+{
+	auto par = m_mapParticleList.find(parName);
+	if (par == m_mapParticleList.end())
+		throw ConfigErr;
+	par->second.pointScale = size;
 }
 
 void Particle_Generator::init()
@@ -221,12 +258,12 @@ int Particle_Generator::FirstUnusedParticle(ParticleObj* obj)
 
 void Particle_Generator::RespawnParticle(Particle & par)
 {
-	float randoma = (float)getRandom(-50,50) / 100.0;
-	float randomb = (float)getRandom(0, 100) / 100.0;
+	float randoma = (float)getRandom(-50,50) / 10.0;
+	float randomb = (float)getRandom(0, 300) / 10.0;
 
 	par.Ellipse = glm::vec2(randoma, randomb);
 	par.angle = 180.0f;
 	par.Position = glm::vec2(-randoma, 0);
-	par.offset = -par.Position-glm::vec2(0.0,0.5);
+	par.offset = -par.Position;
 	par.Life = 1.0f;
 }

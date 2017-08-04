@@ -26,10 +26,13 @@ public:
 	~Particle_Generator();
 	RPG_STATUS loadConfig() override;
 	RPG_STATUS loadTexture();
-	void createParticles(std::string name,unsigned int initNum,std::string texName);
+	void createParticles(std::string name,unsigned int initNum,std::string texName, float size = 1.0, float pointSize = 1.0, glm::vec2 startPos=glm::vec2(0.0,0.0));
 	void deleteParticles(std::string name);
 	void update();
 	void draw();
+	void setParticlesPos(std::string parName, glm::vec2 pos);
+	void setParticlesSize(std::string parName, float size);
+	void setParticlesPointSize(std::string parName, float size);
 private:
 	typedef struct
 	{
@@ -37,6 +40,11 @@ private:
 		Texture* ptex;
 		unsigned int updateNum;
 		unsigned int lastUsedParticle;
+		float dt;
+		glm::mat4 model;
+		glm::vec2 startPos;
+		float scale;
+		float pointScale;
 	}ParticleObj;
 	void init();
 	int FirstUnusedParticle(ParticleObj* obj);
