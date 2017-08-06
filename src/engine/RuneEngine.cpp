@@ -233,8 +233,27 @@ void RuneEngine::exec()
 		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		mapLoop();
-		particleLoop();
+
+		if(scene==1)
+		{ 
+			auto title = m_hTextRender->Context("title");
+			if (title == NULL)
+			{
+				Text::TEXT_CONTEXT ctx;
+				ctx.color = glm::vec3(1.0, 0.2, 0.0);
+				ctx.coord.x = m_tMainWindow.width / 4;
+				ctx.coord.y = m_tMainWindow.height / 2;
+				ctx.data = "OpenGL Scene Test";
+				ctx.scale = 1;
+				m_hTextRender->addContext("title", ctx);
+			}
+		}
+		else if (scene = 2)
+		{
+			m_hTextRender->removeContext("title");
+			mapLoop();
+			particleLoop();
+		}
 		textLoop();
 
 		//others
@@ -247,7 +266,7 @@ void RuneEngine::exec()
 
 void RuneEngine::playMainTheme()
 {
-	m_pAudio->snd = m_pAudio->engine->play2D("./audio/breakout.mp3", true,false,true, irrklang::ESM_AUTO_DETECT,true);
+	m_pAudio->snd = m_pAudio->engine->play2D("./audio/mozart_k138.mp3", true,false,true, irrklang::ESM_AUTO_DETECT,true);
 }
 
 ENGINE_STATUS RuneEngine::loadMap()
@@ -277,10 +296,10 @@ ENGINE_STATUS RuneEngine::loadParticle()
 
 	m_hParticleGen = new Particle_Generator(shader->second.shader);
 	try {
-		m_hParticleGen->createParticles("firetest", 100, "particle_fire",5.0,1.0,glm::vec2(400,300));
-		m_hParticleGen->createParticles("firetest", 100, "particle_fire", 5.0, 1.0, glm::vec2(400, 300));
-		m_hParticleGen->createParticles("firetest", 100, "particle_fire", 5.0, 1.0, glm::vec2(400, 300));
-		m_hParticleGen->createParticles("firetest", 100, "particle_fire", 5.0, 1.0, glm::vec2(400, 300));
+		m_hParticleGen->createParticles("firetest", 400, "particle_fire",5.0,1.0,glm::vec2(400,300));
+		m_hParticleGen->createParticles("firetest0", 100, "particle_fire", 5.0, 1.0, glm::vec2(300, 100));
+		m_hParticleGen->createParticles("firetest1", 100, "particle_fire", 5.0, 1.0, glm::vec2(200, 300));
+		m_hParticleGen->createParticles("firetest2", 100, "particle_fire", 5.0, 1.0, glm::vec2(500, 300));
 		}	    
 	catch(RPG_STATUS &ret){
 		std::cout << "create failed: " << ret << std::endl;
@@ -326,6 +345,14 @@ void RuneEngine::processInput()
 	{
 		m_pAudio->snd->setIsPaused(m_pAudio->isPaused);
 		m_pAudio->isPaused = !m_pAudio->isPaused;
+	}
+	if (glfwGetKey(window, GLFW_KEY_1) == GLFW_PRESS)
+	{
+		scene = 1;
+	}
+	else if (glfwGetKey(window, GLFW_KEY_2) == GLFW_PRESS)
+	{
+		scene = 2;
 	}
 	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
 		m_hMainMap->setView(m_hMainMap->viewStartX(), m_hMainMap->viewStartY() - 1);

@@ -59,6 +59,7 @@ public:
 	ENGINE_STATUS load();
 	void exec();
 private:
+	unsigned char scene = 1;
 	void playMainTheme();
 
 	void mapLoop();
